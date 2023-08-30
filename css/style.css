@@ -1,0 +1,144 @@
+body {
+  background-color: aqua;
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Helvetica Neue", "Arial", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
+}
+
+.app {
+  margin: 10px;
+}
+.header {
+  height: 120px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.name {
+  margin-top: 0px;
+  color: blue;
+  font-size: 2rem;
+}
+.text {
+  color: rgb(29, 90, 143);
+  font-size: 1.4rem;
+}
+.nav {
+  background-color: green;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-list {
+  padding: 0;
+  list-style-type: none;
+}
+
+.menu-item {
+  display: inline-block;
+  padding-left: 10px;
+  font-size: 1.2rem;
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: rgb(237, 230, 230);
+}
+
+.menu-item a:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.auth {
+  margin-right: 10px;
+  display: flex;
+}
+
+.auth-btn {
+  background: none;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  outline: 0;
+  color: yellow;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+.container {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+}
+.content {
+  width: 75%;
+  display: flex;
+  border: 2px solid rgb(223, 210, 210);
+  flex-wrap: wrap;
+}
+
+.content-details {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid gray;
+  text-align: center;
+}
+
+.post {
+  text-decoration: none;
+  flex-basis: calc(33.33% - 10px);
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin: 5px;
+  align-items: center;
+  padding: -5px;
+}
+
+.post .title {
+  text-align: center;
+}
+
+.post .time {
+  margin-right: 130px;
+  margin-bottom: 10px;
+}
+
+.post img {
+  width: 320px;
+  height: 260px;
+}
+
+.post .desc {
+  margin: 10px;
+}
+.sidebar {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 0 0 0.5px rgba(0, 0, 0, 0.1);
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  height: 60px;
+}

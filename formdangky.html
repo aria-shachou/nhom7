@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/dangky.css">
+  <title>Đăng ký</title>
+</head>
+
+<body>
+  <form id="registration-form" action="./regis.php" method="POST">
+    <label for="ma">Mã Sinh Viên:</label>
+    <input type="text" id="ma" name="ma" required>
+    <br>
+    <label for="hoTen">Họ tên:</label>
+    <input type="text" id="hoTen" name="hoTen" required>
+    <br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <br>
+    <div style="display: flex;">
+      <label>Giới tính:</label>
+      <input type="radio" id="nam" name="gioiTinh" value="nam" required style="margin-bottom: 8px;">
+      <label for="nam">Nam</label>
+      <input type="radio" id="nu" name="gioiTinh" value="nu" required style="margin-bottom: 8px;">
+      <label for="nu">Nữ</label>
+    </div>
+    <br>
+
+    <label for="soThich">Sở thích:</label>
+    <div id="soThich" class="checkbox-group" style="display: flex;">
+      <label><input type="checkbox" name="soThich" value="docSach"> Đọc sách</label>
+      <label><input type="checkbox" name="soThich" value="duLich"> Du lịch</label>
+      <label><input type="checkbox" name="soThich" value="amNhac"> Âm Nhạc</label>
+      <label><input type="checkbox" name="soThich" value="amThuc"> Ẩm Thực</label>
+      <label><input type="checkbox" name="soThich" value="khac"> Khác</label>
+    </div>
+    <br>
+    <label for="quocTich">Quốc tịch:</label>
+    <select id="quocTich" name="quocTich" required>
+      <option value="">Chọn quốc tịch</option>
+      <option value="vietnam">Việt Nam</option>
+      <option value="us">United States</option>
+      <option value="uk">United Kingdom</option>
+      <option value="france">France</option>
+    </select>
+    <label for="ghiChu">Ghi chú:</label>
+    <textarea id="ghiChu" name="ghiChu"></textarea>
+    <br>
+    <button type="submit" name="btn-reg">Đăng ký</button>
+    <div id="error-messages"></div>
+  </form>
+  <script src="script.js"></script>
+</body>
+<script src="./js/dangky.js"></script>
+
+</html>
+
+</html>
